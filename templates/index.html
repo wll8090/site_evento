@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>evento</title>
+</head>
+<body>
+    <div class="topo">
+        <div class="nome_topo">
+                EVENTO DE QUIMICA
+        </div>
+        <div class="imagens">
+            {%for i in img%}
+            <img class="imag-topo" src="{{url_for('static',i)}}" alt="" srcset="">
+            {%endfor%}
+
+        </div>
+        <div class="guias">
+            {%for i in rotas%}
+            <div class="botao " >
+                <a class="guia" href="{{rotas[i][1]}}">
+                    <i class="material-icons">{{rotas[i][0]}}</i>
+                    {{i}}</a>
+            </div>
+            {%endfor%}
+
+        </div>
+    </div>
+    <div class="corpo">
+
+    </div>
+    <div class="pe">
+        <div class="info q01"> 
+            
+        </div>
+        <div class="info q02"> 
+            
+            <hr class="sep">
+        </div>
+        <div class="info q03"> 
+            
+            <hr class="sep">
+        </div>
+
+    </div>
+
+</body>
+</html>

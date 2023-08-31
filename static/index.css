@@ -1,0 +1,93 @@
+body {
+    background: #ffffcd;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+}
+.topo {
+    background: rgb(0,51,2);
+    background: linear-gradient(45deg, rgb(0, 147, 5) 0%, rgb(1, 184, 111) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230px;
+    width: 1140px;
+}
+
+.nome_topo {
+    text-align: initial;
+    font-size: 29px;
+    font-family: monospace;
+    font-weight: 500;
+    color: #f2f2f2;
+    text-shadow: -2px 3px 2px BLACK;
+    background: #164c3c;
+    width: 85%;
+    padding-left: 5%;
+}
+
+.imagens {
+    background: #acebb4;
+    width: 90%;
+    height: 80%;
+    margin: 2px;
+}
+
+.guias {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.botao {
+    color: #fff;
+    text-align: center;
+}
+
+.guia:hover {
+    background: #2b9575;
+}
+.guia {
+    color: #fff;
+    text-decoration: none;
+    background: #164c3c;
+    padding: 0px 30px;
+    height: 30px;
+    font-size: 20px;
+    margin: 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.corpo {
+    background: #acebb4;
+    width: 1140px;
+    height: 640px;
+}
+
+.pe {
+    background: #444;
+    height: 250px;
+    width: 1076px;
+    margin: 8px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 32px;
+}
+
+.info {
+    height: 100%;
+}
+
+.sep {
+    height: 90%;
+    border: none;
+    border-left: solid 1px #858585;
+}
