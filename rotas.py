@@ -11,7 +11,7 @@ def rotas(app):
                  'sobre':['assignment','/sobre'],
                  'inscrição':['perm_contact_calendar','/inscricao'],
                  'aaaa':['question_answer','/aaaa']}
-        img=['001','002','003']
+        img=['001.jpg','002.jpg','003.jpg','004.png']
         
         return render_template('index.html', rotas=rotas, img=img)
     
