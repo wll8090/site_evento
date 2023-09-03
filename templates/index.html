@@ -14,13 +14,13 @@
     </div>
     <div class="topo">
         <div class="nome_topo">
-                EVENTO DE QUIMICA
+                20° SNCT
         </div>
         <div class="imagens">
             <div class="logo">
-                <img class="imag-logo" src="{{url_for('static',filename='001.jpg')}}" alt="">
+                <img class="imag-logo" src="{{url_for('static',filename='001.jpeg')}}" alt="">
             </div>
-            <div class="nome-topo"> <b> 20° SEMANA NACIONAL DE <br> CIÊNCIA E TECNOLOGIA</b></div>
+            <div class="nome-topo"> <b> SEMANA NACIONAL DE <br> CIÊNCIA E TECNOLOGIA</b></div>
             {%for i in img%}
             <div class="gradiente">
                 <img class="imag-topo" src="{{url_for('static',filename=i)}}" alt="" srcset="">
@@ -40,79 +40,31 @@
         </div>
     </div>
     <div class="corpo">
-        <div class="parte-main">
-            <div class="div-carrossel">
-                <div class="caroussel">
-                    <img class="image-carrossel" src="{{url_for('static',filename='001.jpg')}}" alt="Imagem 1">
-                    <img class="image-carrossel" src="{{url_for('static',filename='002.jpg')}}" alt="Imagem 2">
-                    <img class="image-carrossel" src="{{url_for('static',filename='003.jpg')}}" alt="Imagem 3">
-                    <img class="image-carrossel" src="{{url_for('static',filename='004.png')}}" alt="Imagem 4">
-                </div>
-                <div class="caroussel-texto">
-                    <a class="link-carrossel" href="http://">19°</a>
-                    <a class="link-carrossel" href="http://">18°</a>
-                    <a class="link-carrossel" href="http://">17°</a>
-                    <a class="link-carrossel" href="http://">16°</a>
-                </div>
-            </div>
-            <div class="info">
-
-            </div>
-        </div>
-        <div class="info-left">
-
-        </div>
-
+        {{frame | safe}}
     </div>
     <div class="pe">
-        <div class="info q01"> 
-            
+        <div class="info q01">
+            <div class="contato">
+                <h2 class="titulorodape">informação</h2> 
+            </div>
         </div>
+
         <div class="info q02"> 
-            
             <hr class="sep">
+            <div class="contato">
+                <h2 class="titulorodape">Sobre</h2> 
+            </div>
         </div>
+
         <div class="info q03"> 
-            
             <hr class="sep">
+            <div class="contato">
+                <h2 class="titulorodape">Contato</h2> 
+                <a href="https://ufnt.edu.br/">UFNT</a><br>
+                Lot. Araguaina Sul, Araguaína - TO, 77826-612 
+
+            </div>
         </div>
-
     </div>
-
-
-
-<script>
-const images = document.querySelectorAll('.caroussel img');
-const textos = document.querySelectorAll('.caroussel-texto a');
-let currentImageIndex = 0;
-
-function showImage(index) {
-    images.forEach((image) => {
-        image.style.display = 'none';
-    });
-    images[index].style.display = 'block';
-
-    textos.forEach((texto) => {
-        texto.style.color = '#888';
-        texto.style.fontSize = '20px';
-
-    });
-    textos[index].style.color = '#080';
-    textos[index].style.fontSize = '30px';
-}
-
-function nextImage() {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    showImage(currentImageIndex);
-}
-
-// Inicia o carrossel
-setInterval(nextImage, 5000); // Altera de imagem a cada 5 segundos
-
-// Mostra a primeira imagem
-showImage(currentImageIndex);
-
-</script>
-
 </body>
 </html>

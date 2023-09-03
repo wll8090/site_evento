@@ -1,9 +1,9 @@
 from flask import Flask
-from rotas import rotas
+from rotas import pages
 
 def create_app():
     app=Flask(__name__)
-    rotas(app)
+    pages(app)
 
     return app
 

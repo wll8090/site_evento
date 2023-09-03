@@ -1,0 +1,16 @@
+{%set dados=['NOME','CPF','EMAIL']%}
+
+<div class="main_form">
+    <div class="formform">
+        <h2>Formulario de inscrição</h2>
+            <form class="formulario" action="./inscricao" method="post">
+                {%for i in dados%}
+                <input class="entry" type="text" name="{{i}}" id="" placeholder="{{i}}">
+                {%endfor%}
+                <div>
+                    <button class="botao guia sub" type="submit">inscreva-se</inscreva-se></button>
+                </div>
+            </form>
+    </div>
+</div>
+            

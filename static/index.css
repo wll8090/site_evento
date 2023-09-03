@@ -7,6 +7,11 @@ body {
     align-content: space-around;
 }
 
+
+.branco{
+    background: #ffffcd;
+}
+
 .imag-bak {
     position: fixed;
     margin-top: -20px;
@@ -24,8 +29,7 @@ img.image-bak {
 }
 
 .topo {
-    background: rgb(0,51,2);
-    background: linear-gradient(45deg, rgb(0, 147, 5) 0%, rgb(1, 184, 111) 100%);
+    background: linear-gradient(45deg, #023e23 0%, #078d50 94%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +45,7 @@ img.image-bak {
     font-weight: 500;
     color: #f2f2f2;
     text-shadow: -2px 3px 2px BLACK;
-    background: #164c3c;
+    background: #078d50;
     width: 85%;
     padding-left: 5%;
 }
@@ -71,12 +75,12 @@ img.image-bak {
 }
 
 .guia:hover {
-    background: #2b9575;
+    background: #09bd6b;
 }
 .guia {
     color: #fff;
     text-decoration: none;
-    background: #164c3c;
+    background: #078d50;
     padding: 0px 30px;
     height: 30px;
     font-size: 20px;
@@ -107,6 +111,7 @@ img.image-bak {
     grid-template-rows: 1fr;
     padding: 32px;
     z-index: 2;
+    font-family: sans-serif;
 }
 
 .info {
@@ -114,8 +119,9 @@ img.image-bak {
 }
 
 .sep {
-    height: 90%;
+    height: 250px;
     border: none;
+    position: absolute;
     border-left: solid 1px #858585;
 }
 
@@ -137,7 +143,6 @@ img.image-bak {
     height: 100%;
     object-fit: cover;
     position: absolute;
-    border-radius: 5px;
     animation: crossfade 8s infinite alternate; /* Duração da transição de 5 segundos */
 }
 
@@ -168,15 +173,19 @@ img.image-bak {
     background: #fff;
     width: 900px;
     height: 470px;
-    border-radius: 5px;
-    box-shadow: -2px 3px 13px 0px #0000007d;
 }
 
 .info-left {
     background: #fff;
     width: 433px;
     height: 471px;
+}
+.sombra{
     box-shadow: -2px 3px 13px 0px #0000007d;
+}
+
+.bordercurv{
+    border-radius: 5px;
 }
 
 .image-carrossel {
@@ -203,4 +212,53 @@ img.image-bak {
     color: #777;
     font-size: 30px;
     font-weight: bolder;
+}
+
+.main_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    width: 80%;
+}
+
+.entry {
+    height: 25px;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px;
+    margin-left: 50px;
+    padding-left: 17px;
+    width: 100%;
+    font-size: 17px;
+}
+
+.formform {
+    background: #fff;
+    width: 50%;
+    padding: 10px;
+}
+
+.sub {
+    border: none;
+    width: 180px;
+    margin-left: 50px;
+}
+
+.contato {
+    margin-left: 30px;
+    color: #fff;
+}
+.titulorodape{
+    border-bottom: solid 1px #777;
+
+}
+.pe a {
+    color: #fff;
 }
