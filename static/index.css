@@ -23,6 +23,7 @@ body {
     height: 103%;
     display: flex;
     filter: blur(3px);
+    z-index: -1;
 }
 
 img.image-bak {
