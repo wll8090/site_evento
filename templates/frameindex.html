@@ -1,17 +1,21 @@
-
+{%set link={
+'19º SNCT':['http://google.com','001.jpg'],
+'18º SNCT':['http://google.com','002.jpg'],
+'17º SNCT':['http://google.com','003.jpg'],
+'16º SNCT':['http://google.com','004.png']        
+}%}
+    
     <div class="parte-main">
         <div class="div-carrossel">
             <div class="caroussel">
-                <img class="image-carrossel" src="{{url_for('static',filename='001.jpg')}}" alt="Imagem 1">
-                <img class="image-carrossel" src="{{url_for('static',filename='002.jpg')}}" alt="Imagem 2">
-                <img class="image-carrossel" src="{{url_for('static',filename='003.jpg')}}" alt="Imagem 3">
-                <img class="image-carrossel" src="{{url_for('static',filename='004.png')}}" alt="Imagem 4">
+                {%for j in link%}
+                <img class="image-carrossel" src="{{url_for('static',filename=link[j][1])}}" alt="Imagem 1">
+                {%endfor%}
             </div>
                 <div class="caroussel-texto">
-                    <a class="link-carrossel" href="http://">19°</a>
-                    <a class="link-carrossel" href="http://">18°</a>
-                    <a class="link-carrossel" href="http://">17°</a>
-                    <a class="link-carrossel" href="http://">16°</a>
+                    {%for i in link%}
+                    <a class="link-carrossel" href="{{link[i][0]}}">{{i}}</a>
+                    {%endfor%}
                 </div>
             </div>
             <div class="info">

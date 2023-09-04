@@ -142,14 +142,15 @@ img.image-bak {
     height: 100%;
     object-fit: cover;
     position: absolute;
+    opacity: 0;
     animation: crossfade 8s infinite alternate; /* Duração da transição de 5 segundos */
 }
 
 @keyframes crossfade {
-    10% {opacity: 1;}
-    33% {opacity: 0;}
-    66%{ opacity: 0;}
-    90%{ opacity: 1;}
+    10% {opacity: 0;}
+    44% {opacity: 1;}
+    66%{ opacity: 1;}
+    90%{ opacity: 0;}
 }
 
 .imag-logo {
