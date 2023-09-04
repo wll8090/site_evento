@@ -1,15 +1,17 @@
 body {
     background: #ffffcd;
-    font-family: monospace;
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: space-around;
 }
 
-
-.branco{
-    background: #ffffcd;
+.verde1{
+    background: #078d50;
+} 
+.tverde1{
+    color: #078d50 !important;
 }
 
 .imag-bak {
@@ -41,11 +43,9 @@ img.image-bak {
 .nome_topo {
     text-align: initial;
     font-size: 29px;
-    font-family: monospace;
     font-weight: 500;
     color: #f2f2f2;
     text-shadow: -2px 3px 2px BLACK;
-    background: #078d50;
     width: 85%;
     padding-left: 5%;
 }
@@ -70,21 +70,21 @@ img.image-bak {
 }
 
 .botao {
-    color: #fff;
+    color: #fff !important;
     text-align: center;
+    margin: 1px;
 }
 
-.guia:hover {
-    background: #09bd6b;
+.botao:hover{
+    background: #09b366;
 }
+
 .guia {
-    color: #fff;
     text-decoration: none;
-    background: #078d50;
+    color: #fff;
     padding: 0px 30px;
     height: 30px;
     font-size: 20px;
-    margin: 1px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -111,7 +111,6 @@ img.image-bak {
     grid-template-rows: 1fr;
     padding: 32px;
     z-index: 2;
-    font-family: sans-serif;
 }
 
 .info {

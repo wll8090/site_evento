@@ -26,31 +26,28 @@
             const images = document.querySelectorAll('.caroussel img');
             const textos = document.querySelectorAll('.caroussel-texto a');
             let currentImageIndex = 0;
-            
             function showImage(index) {
                 images.forEach((image) => {
                     image.style.display = 'none';
-                });
+                    });
                 images[index].style.display = 'block';
-                
                 textos.forEach((texto) => {
-                    texto.style.color = '#888';
-        texto.style.fontSize = '20px';
+                    texto.classList.remove("tverde1");
+                    texto.style.fontSize = '20px';
+                    });
+                textos[index].classList.add("tverde1");
+                textos[index].style.fontSize = '30px';
+                }
 
-    });
-    textos[index].style.color = '#080';
-    textos[index].style.fontSize = '30px';
-}
+            function nextImage() {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                showImage(currentImageIndex);
+                }
 
-function nextImage() {
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    showImage(currentImageIndex);
-}
+            // Inicia o carrossel
+            setInterval(nextImage, 5000); // Altera de imagem a cada 5 segundos
 
-// Inicia o carrossel
-setInterval(nextImage, 5000); // Altera de imagem a cada 5 segundos
+            // Mostra a primeira imagem
+            showImage(currentImageIndex);
 
-// Mostra a primeira imagem
-showImage(currentImageIndex);
-
-</script>
+        </script>

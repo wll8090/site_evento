@@ -25,6 +25,8 @@ def pages(app):
             frame=render_template('frameindex.html')
         elif rota=='inscricao':
             frame=render_template('frameinscricao.html')
+        elif rota =='sobre':
+            frame = render_template('framesobre.html') 
         else:
             return abort(404)
         return render_template('index.html', rotas=rotas, img=img, frame=frame)
